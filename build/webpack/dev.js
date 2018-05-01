@@ -20,7 +20,9 @@ module.exports = {
     });
 
     server.listen(port, host, () => {
+      /* eslint-disable no-console */
       console.log(`Starting server on http://${host}:${port}`);
+      /* eslint-enable no-console */
     });
   }
 };
