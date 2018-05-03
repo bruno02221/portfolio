@@ -6,8 +6,8 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "start": "node build --dev --config=./config --bundler=./build/webpack",
-    "build": "node build --prod --config=./config --bundler=./build/webpack"
+    "start": "node engine --dev --data=./my-data --template=./elegance",
+    "build": "node engine --prod --data=./my-data --template=./elegance"
   },
   "husky": {
     "hooks": {
