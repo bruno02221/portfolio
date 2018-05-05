@@ -94,4 +94,11 @@ describe("deep", () => {
     expect(deep(data, "ru", "en")).toEqual("Default");
     expect(deep(data, "ru", "pt")).toEqual("Padrão");
   });
+
+  it("tries ISO-639 full code first and only language code after", () => {
+    const first = { "pt-BR": "First" };
+    const second = { pt: "Second" };
+    expect(deep(first, "pt-BR")).toEqual("First");
+    expect(deep(second, "pt-BR")).toEqual("Second");
+  });
 });

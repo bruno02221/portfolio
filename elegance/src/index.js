@@ -5,7 +5,9 @@ const span = document.createElement("span");
 span.style.color = "blue";
 span.style.fontWeight = "bold";
 span.style.fontSize = "32px";
-span.innerHTML = `${data.personal.name.first} ${data.personal.name.last}`;
+span.innerHTML = `${data.personal.name.first} ${data.personal.name.last} - ${
+  data.professional.role
+}`;
 
 const picture = document.createElement("img");
 picture.src = dataPath(data.personal.picture);
