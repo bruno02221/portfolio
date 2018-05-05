@@ -2,12 +2,16 @@
   "name": {
     "first": "Bruno",
     "middle": "Coloca",
-    "last": "Couto"
+    "last": {
+      "en": "Couto",
+      "pt": "Coloca"
+    }
   },
   "birthdate": {
     "year": 1988,
     "month": 2,
     "day": 22
   },
-  "gender": "M"
+  "gender": "M",
+  "picture": "./picture.jpg"
 }
