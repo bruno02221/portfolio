@@ -11,5 +11,9 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:prettier/recommended"
   ],
-  plugins: ["react"]
+  plugins: ["react"],
+  globals: {
+    DATA_PATH: true,
+    TEMPLATE_PATH: true
+  }
 };
