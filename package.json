@@ -6,8 +6,8 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "start": "node engine --dev --data=./my-data --template=./elegance",
-    "build": "node engine --prod --data=./my-data --template=./elegance"
+    "start": "node engine --mode=dev --data=./my-data --template=./elegance",
+    "build": "node engine --mode=prod --data=./my-data --template=./elegance"
   },
   "husky": {
     "hooks": {
@@ -43,7 +43,8 @@
     "lint-staged": "^7.0.5",
     "prettier": "^1.12.1",
     "webpack": "^4.7.0",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^3.1.4",
+    "yargs": "^11.0.0"
   },
   "dependencies": {
     "react": "^16.3.2",

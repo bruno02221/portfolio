@@ -1,7 +1,6 @@
 const path = require("path");
 const bundler = require("./bundler");
-
-// TODO: use some kind of arguments parser instead of hard coding.
+const args = require("yargs").argv;
 
 function normalizeMode(mode) {
   switch (true) {
@@ -12,9 +11,9 @@ function normalizeMode(mode) {
   }
 }
 
-const mode = normalizeMode(process.argv[2].replace("--", ""));
-const dataPath = process.argv[3].replace("--data=", "");
-const templatePath = process.argv[4].replace("--template=", "");
+const mode = normalizeMode(args.mode);
+const dataPath = args.data;
+const templatePath = args.template;
 
 const paths = {
   root: path.resolve("."),
